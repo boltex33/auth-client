@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.15.0",
+    "npm" : "0.10.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "boltex",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
